@@ -15,6 +15,13 @@ const age =19
 // console.log(name.toLowerCase());
 
 const str="    Krishna     "
-console.log(str.trim());
+// console.log(str.trim());
+const str1="     Hi, this is Krishnaraj!     "
+// let word=str1.split(" ")
+// console.log(word);
+// console.log(word[3]);
+
+let s=str1.trimStart()
+console.log(s);
 
 
