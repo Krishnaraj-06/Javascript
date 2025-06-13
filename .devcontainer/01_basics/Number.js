@@ -28,6 +28,8 @@ console.log(Math.round(3.5));
 console.log(Math.ceil(3.2));
 //4)floor():LIF for a value, returns the bottom most value
 console.log(Math.floor(3.9));
+//5)min():Returns the minimum value from the set of given integers
+console.log(Math.min(10, -2, 92,101));
 
 
 
