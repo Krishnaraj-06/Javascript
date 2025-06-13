@@ -18,19 +18,29 @@ let a=123.092
 
 
 //++++++++++++++++++++++++++++Maths++++++++++++++++++++++++//
-console.log(Math);
-//The Math Library in JS comes with various functions/Methods
-//1)abs(): It returns the positive value of any integer
-console.log(Math.abs(2));
-//2)round():It rounds of the decimal value
-console.log(Math.round(3.5));
-//3)ceil():GIF for a value, returns the top most value
-console.log(Math.ceil(3.2));
-//4)floor():LIF for a value, returns the bottom most value
-console.log(Math.floor(3.9));
-//5)min():Returns the minimum value from the set of given integers
-console.log(Math.min(10, -2, 92,101));
+// console.log(Math);
+// //The Math Library in JS comes with various functions/Methods
+// //1)abs(): It returns the positive value of any integer
+// console.log(Math.abs(2));
+// //2)round():It rounds of the decimal value
+// console.log(Math.round(3.5));
+// //3)ceil():GIF for a value, returns the top most value
+// console.log(Math.ceil(3.2));
+// //4)floor():LIF for a value, returns the bottom most value
+// console.log(Math.floor(3.9));
+// //5)min():Returns the minimum value from the set of given integers
+// console.log(Math.min(10, -2, 92,101));
+// //6)max():Returns the maximum value from the set of given 
+// console.log(Math.max(10,-2, 19,992));
 
 
+///Other terminology of math library: i.e Math.random(): It returns random value from 0 to 1.
+console.log(Math.floor((Math.random()*10)+1));
+
+const min=10
+const max=20
+//If hume random value generate krna hai jiska ek limit type rahe ki minimum itna rahe and maximum itna so hum ek formula use krte
+
+console.log(Math.floor(Math.random()*(max-min+1)+min));
 
 
