@@ -22,3 +22,21 @@ console.log(arr1.flat(Infinity));
 
 
 
+//Ab agar hume check karna hai ki array hai ya nahi, so hume use karte hai isArray():
+console.log(Array.isArray("Krishna, Pragya"));
+//Ab ye toh array hai nahi but agar isko array banana hai so hum use kar sakte hai From():
+console.log(Array.from("Krishna, Pragya"));
+
+
+
+//Agar hume kisi set of values of array me convert karna ho toh hume use karte Of():
+let A=100
+let B=200
+let C=300
+console.log(Array.of(A,B,C));
+
+
+
+
+
+
