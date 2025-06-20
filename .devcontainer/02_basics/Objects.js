@@ -29,4 +29,15 @@ console.log(User1["Full Name"]);
 //How to access Symbol(A type of ds) in Objects:
 console.log(typeof [A]);
 
+//How to alter the values in Objects 
+User1.name="Pragya"
+console.log(User1);
+
+
+//Now the name has been changed but what if we want to fix this name, so that others cannot change it!
+Object.freeze(User1);
+User1.name="Krishnaraaaj"
+console.log(User1);
+//Duh, the output has been the same, as the data has been freezed!
+
 
