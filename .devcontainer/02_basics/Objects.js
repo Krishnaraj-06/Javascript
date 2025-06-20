@@ -9,8 +9,24 @@ widely used in APIs and state management */
 
 
 //1) Object Literal:
+const A=Symbol("Key1");
+
 const User1={
     name:"Krishna",
      age:21,
-     isLogggedIn:true
+     isLogggedIn:true,
+     "Full Name":"Krishnaraj Singh",
+     [A]:"MyKey1"
 }
+
+//Ways to access the values of an object:
+
+console.log(User1["name"]); //First Way
+console.log(User1.name); //Second Way
+console.log(User1["Full Name"]);
+
+
+//How to access Symbol(A type of ds) in Objects:
+console.log(typeof [A]);
+
+
