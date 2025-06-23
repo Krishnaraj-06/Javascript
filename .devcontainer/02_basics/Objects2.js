@@ -35,7 +35,23 @@ const E={...A, ...B} //Ye spread property use karna ek best practice hai
 //console.log(C); 
 
 //Agar hume check karna hai ki kisi object me vo property/Element hai ya nahi so kese karenge
-console.log(regularUser.hasOwnProperty('firstName'));
+// console.log(regularUser.hasOwnProperty('firstName'));
 
 //OBjects Done 
 
+
+//Destructure of objects and APIs:
+//Agar kisi object se hume koi value extract karna hai, so baar baar vo object.value ko call karne se achha hum ye 
+//property use karenge
+
+const Course={
+    faculty:"Krishna",
+    student:"Pragya",
+    age:"19"
+}
+
+//course.faculty -->>Ye baar baar likhne se accha 
+const {faculty:teacher}=Course
+console.log(teacher); //Humne ek alag way se faculty(course obj ka value) ko access kiya
+
+//JSON is a js object notation, jo dikhta object k tarah hi h raw data consist karta h
