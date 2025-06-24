@@ -22,6 +22,22 @@ function Hickey(Name1, Name2)
 {
     return `${Name1} love ${Name2}`
 }
-console.log(Hickey("Krishnaraj", "Pragya"));
+// console.log(Hickey("Krishnaraj", "Pragya"));
 //What if user ne koi value hi pass nahi kari?
-//So jo output me aata hai vo undefined show hota hai
+//So jo output me aata hai vo "undefined" show hota hai
+
+
+
+//Ek concept hota hai default parameters ka, agar user ne koi value hi pass nahi kara toh ye concept use hota hai!
+
+function myName(username="Krishnaraj")
+{
+    if(!username)
+    {
+        console.log("Bhai naam daldo");
+        return
+    }
+    return `${username} just loggedIn`
+}
+console.log(myName()); 
+//See yaha par maine koi arguement pass nahi kiya, bas default me krishnaraj likha tha so vahi pass hogya
