@@ -66,3 +66,13 @@ function Print(anyObject)
     
 }
 Print(O1)
+
+//Arrays in Functions
+const Array1=[100, 2000, 400000, 4000000
+]
+
+function returnSecondValue(getArray)
+{
+    return getArray[1];
+}
+console.log(returnSecondValue(Array1));
