@@ -39,5 +39,30 @@ function myName(username="Krishnaraj")
     }
     return `${username} just loggedIn`
 }
-console.log(myName()); 
+// console.log(myName()); 
 //See yaha par maine koi arguement pass nahi kiya, bas default me krishnaraj likha tha so vahi pass hogya
+
+
+function AddCartPrice(...num1)
+{
+    return num1;
+}
+//Ab hume pta hai, (...) ye jo operator hai vo array me as a "Spread" property use hota hai, but in a function vo as a "rest" 
+//hota hai
+console.log(AddCartPrice(200,300,400,500));
+
+/*Ab ye property kya karta hai ki, if user ko multiple items add krne so vo multiple parameters ko set kiye bina
+ye use kare and then uska kaam hojaye...ye property hum shopping cart me use kr skte */
+
+//Objects in Functions
+const O1={
+    name:"Krishnaraj",
+    wife:"Pragya"
+}
+
+function Print(anyObject)
+{
+    console.log(`My name is ${anyObject.name} and my wifu name is ${anyObject.wife}.`);
+    
+}
+Print(O1)
